@@ -22,14 +22,10 @@ export class UserService {
     getUsers(): Observable<User[]> {
         let headers = new Headers();
         headers.append('x-access-token', this.auth.getToken());
-        console.log("this.auth.getToken() = "+this.auth.getToken())
-
-        //let headers = new Headers({ 'Content-Type': 'application/json' })
-        //let options = new RequestOptions({ headers: headers })
-
+       // console.log("this.auth.getToken() = "+this.auth.getToken())
         return this.http2.get(this.endpointUrl + 'users', {headers: headers})
             .map((response: Response) => <User[]>response.json())
-            .do(data => console.log('All: ' + JSON.stringify(data)))
+           // .do(data => console.log('All: ' + JSON.stringify(data)))
             .catch(this.handleError);
     }
 

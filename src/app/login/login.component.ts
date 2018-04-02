@@ -53,30 +53,4 @@ export class LoginComponent implements OnInit {
                 });
     }
 
-
-
-// login1(formValues) {
-//     this.auth.loginUser(formValues.email, formValues.password).then(
-//       (res) => { console.log('success', res)
-//       this.router.navigate(['events']) },
-//       (err) => { console.log('error', err) }
-//       )
-// }
-
-//     login2() {
-//             this.loading = true;
-//             this.auth.loginUser(this.model.email, this.model.password).then(
-//                  (res) => {                       
-//                         this.alertService.success('login successful', true);
-//                         this.router.navigate([this.returnUrl]);
-//                         this.loading = false;                       
-//                           },
-//                  (err) => { console.log('error', err)
-//                             this.alertService.error(err);
-//                             this.loading = false;
-//              });
-//         }
-
-
-
 }

@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
     }
     
     private loadAllUsers() {
-        console.log("this.currentUser.email =   "+this.currentUser.email)
+        //console.log("this.currentUser.email =   "+this.currentUser.email)
         this.userService.getAll().subscribe(
         users => { this.users = users; },
          error => { this.alertService.error(error);}
